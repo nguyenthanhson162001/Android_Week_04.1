@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="1dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    app:layout_anchorGravity="center|center_horizontal|center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:src="@drawable/icon1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="212dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:weightSum="1">
+        android:gravity="center"
+
+        <TextView
+            android:id="@+id/tvLanguageName"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="left|center"
+            android:text="ITEM EXAMPLE"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:id="@+id/shop"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Shop"
+                android:textColor="#595353" />
+
+            <TextView
+                android:id="@+id/shopName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextVieádsadw"
+                android:textColor="#E83030" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#F31111"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:maxWidth="150dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Chat"
+        android:textSize="14dp"
+        app:iconGravity="textEnd"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+</LinearLayout>
